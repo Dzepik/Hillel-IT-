@@ -1,5 +1,6 @@
 a = input(': ').title()
-print(a)
+result = "".join(a.split("_"))
+print(result)
 
 
 
