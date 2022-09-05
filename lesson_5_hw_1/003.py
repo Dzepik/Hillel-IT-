@@ -11,12 +11,12 @@ def circles_interception(x1, y1, r1, x2, y2, r2):
     else:
         return "Нет" if cen_dist > r1 + r2 else "Да"
 
-
 data = []
 while True:
     line = input()
     if not line:
         break
     data.append(float(line))
+
 
 print(circles_interception(*data))
