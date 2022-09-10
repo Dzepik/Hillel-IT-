@@ -12,7 +12,7 @@ def circles_interception(x1, y1, r1, x2, y2, r2):
 
 data = []
 while True:
-    line = input()
+    line = input('Введите точки координат и радиус: ')
     if not line:
         break
     data.append(float(line))
