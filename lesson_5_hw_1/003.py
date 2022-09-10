@@ -6,10 +6,9 @@ from math import sqrt
 
 def circles_interception(x1, y1, r1, x2, y2, r2):
     cen_dist = sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
-    if not cen_dist:
-        return "Нет" if r1 != r2 else "Да"
-    else:
-        return "Нет" if cen_dist > r1 + r2 else "Да"
+    if cen_dist > r1 + r2:
+        return True
+    return False
 
 data = []
 while True:
