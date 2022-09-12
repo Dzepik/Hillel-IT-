@@ -3,15 +3,16 @@
 
 def sing(x):
     if x > 0:
-        print('sing(x) = 1')
+        x = 1
     elif x < 0:
-        print('sign(-x) = -1')
+        x = -1
     else:
-        print('sign(x) = 0')
+        x = 0
+    return x
 
 
 x = int(input('Введіть число: '))
-sing(x)
+print(sing(x))
 
 
 
