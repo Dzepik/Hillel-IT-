@@ -1,12 +1,12 @@
 #   функцію, що визначає чи введене число є парним
 
 
-def check(n):
+def is_even(n):
     return n % 2 == 0
 
 
 n = int(input("Введите число: "))
-if (check(n) == True):
+if is_even(n):
     print("Число четное!")
 else:
     print("Число нечетное!")
