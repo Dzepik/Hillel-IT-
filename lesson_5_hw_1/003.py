@@ -4,7 +4,7 @@
 from math import sqrt
 
 
-def circles_interception(x1, y1, r1, x2, y2, r2):
+def circles_intersect(x1, y1, r1, x2, y2, r2):
     cen_dist = sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
     if cen_dist > r1 + r2:
         return True
@@ -18,4 +18,4 @@ while True:
     data.append(float(line))
 
 
-print(circles_interception(*data))
+print(circles_intersect(*data))
