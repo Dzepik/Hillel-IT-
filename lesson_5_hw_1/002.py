@@ -15,15 +15,14 @@ def solve_quadratic_equation(a, b, c):
     if D > 0:
         x1 = (-b + math.sqrt(D)) / (2 * a)
         x2 = (-b - math.sqrt(D)) / (2 * a)
-        print('x1 = %.2f \nx2 = %.2f' % (x1, x2))
+        return x1, x2
     elif D == 0:
-        x1= -b / (2 * a)
-        print('x = %.2f' % x)
+        x1 = -b / (2 * a)
+        return x1, None
     else:
-        print('Корней нет')
-    return D
+        return None, None
 
 
-solve_quadratic_equation(a, b, c)
+print(solve_quadratic_equation(a, b, c))
 
 
