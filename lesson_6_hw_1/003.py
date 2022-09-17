@@ -22,9 +22,10 @@ def diff_min_max():
             negative += i
     print(f'Your random generated list of lenght {lenght} is:')
     print(my_list)
-    print(positive, negative)
+    print('Sum of positive numbers =', positive)
+    print('Sum of negative numbers =', negative)
     result = positive - negative
-    print(result)
+    print('The difference between the sum of paired and unpaired numbers =', result)
 
 
 diff_min_max()
