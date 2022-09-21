@@ -6,12 +6,12 @@
 def sum_symbol_codes(first, last):
     my_list = list(map(ord, 'abcdefghijklmnopqrstuvwxyz'))
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    from_ = alphabet.index(first)
+    go = alphabet.index(first)
     to = alphabet.index(last)
 
-    return sum(my_list[from_:to + 1])
+    return sum(my_list[go:to + 1])
 
-print(sum_symbol_codes('a', 'z'))
+print(sum_symbol_codes('a', 'm'))
 
 
 

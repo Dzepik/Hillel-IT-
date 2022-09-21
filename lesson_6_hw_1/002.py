@@ -8,14 +8,14 @@ import random
 def diff_min_max():
     lenght = int(input('Enter the list size: '))
 
-    my_list = []
+    num_limit = []
     for i in range(lenght):
-        my_list.append(random.randint(1,100))
+        num_limit.append(random.randint(1,100))
 
     print(f'Your random generated list of lenght {lenght} is:')
-    print(my_list)
+    print(num_limit)
 
-    result = max(my_list) - min(my_list)
+    result = max(num_limit) - min(num_limit)
     print(result)
 
 diff_min_max()
@@ -24,9 +24,9 @@ diff_min_max()
 
 def diff_min_max():
     lenght = int(input('Enter the list size: '))
-    my_list = [random.randint(1, 200) for _ in range(lenght)]
-    print(my_list)
-    return max(my_list) - min(my_list)
+    num_limit = [random.randint(1, 200) for _ in range(lenght)]
+    print(num_limit)
+    return max(num_limit) - min(num_limit)
 
 
 
