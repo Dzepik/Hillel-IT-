@@ -4,31 +4,31 @@
 """
 import random
 
+num_limit = int(input('Enter the list size: '))
+upper_bound = 0
+lower_bound = 0
 
-
-def diff_min_max():
-
-    lenght = int(input('Enter the list size: '))
+def diff_min_max(num_limit, lower_bound, upper_bound):
 
     my_list = []
-    positive = 0
-    negative = 0
-    for i in range(lenght):
+    for i in range(num_limit):
         my_list.append(random.randint(1,100))
     for i in my_list:
         if i % 2 == 0:
-            positive += i
+            upper_bound += i
         elif i % 2 != 0:
-            negative += i
-    print(f'Your random generated list of lenght {lenght} is:')
+            lower_bound += i
+    print(f'Your random generated list of lenght {num_limit} is:')
     print(my_list)
-    print('Sum of positive numbers =', positive)
-    print('Sum of negative numbers =', negative)
-    result = positive - negative
-    print('The difference between the sum of paired and unpaired numbers =', result)
+    print('Sum of positive numbers =', upper_bound)
+    print('Sum of negative numbers =', lower_bound)
+    result = upper_bound - lower_bound
+    return result
+diff_min_max(10, 1, 100)
 
 
-diff_min_max()
+
+
 
 
 
