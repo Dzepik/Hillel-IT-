@@ -4,6 +4,16 @@
 """
 
 lst = [1, 3, 7, 11, 67, 444]
+elem = 768
 
-for elem in enumerate(lst):
-    print(elem)
+def index(lst, elem):
+    for i, k in enumerate(lst):
+        if k == elem:
+            return i
+    return None
+
+print(index(lst, elem))
+
+
+
+
